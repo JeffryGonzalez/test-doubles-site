@@ -31,7 +31,12 @@ export default defineConfig({
 
           ]},
           { text: 'Server Apps', link:  '/docs/server', items: [
-            { text:  'WireMock', link: '/docs/server-wire-mock'},
+            { text:  'WireMock', link: '/docs/server-wire-mock', items: [
+              { text: 'Setup',  link: '/docs/wm-1.md' },
+              { text: 'Templating',  link: '/docs/wm-2.md' },
+              { text: 'Recording', link:  '/docs/wm-3.md'}
+            ]},
+            { text: 'Test Doubles For API Calls', link: '/docs/wm-api.md'},
             { text: 'Databases', link: '/docs/server-database.md'},
             { text: 'Messaging', link: '/docs/server-messaging.md'},
             { text: '.NET Specific', link: '/docs/server-dotnet.md'}

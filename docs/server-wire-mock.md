@@ -23,28 +23,3 @@ It is, itself, an HTTP based API and can be configured and managed through HTTP 
 
 It can also integrate with [Test Containers](https://github.com/WireMock-Net/WireMock.Net/wiki/Using-WireMock.Net.Testcontainers).
 
-## Running a WireMock Server
-
-While you can run WireMock natively, and there is even an `npx wiremock` distribution, you must have the appropriate version of the Java Runtime installed. I prefer to use the WireMock docker container.
-
-```yml
-services:
-  wiremock:
-    image: "wiremock/wiremock:3.10.0"
-    container_name: my_wiremock
-    ports:
-      - "8443:8443"
-      - "8080:8080"
-    volumes:
-      - ./mocks/__files:/home/wiremock/__files
-      - ./mocks/mappings:/home/wiremock/mappings
-    entrypoint: [ "/docker-entrypoint.sh",  "--disable-gzip", "--https-port=8443", "http-port=8080", "--record-mappings", "--enable-stub-cors", "--verbose" ]
-```
-
-See [WireMock Docs - Docker](https://wiremock.org/docs/standalone/docker/) and [WireMock Standalone](https://wiremock.org/docs/standalone/java-jar/) for details.
-
-## Video Walkthrough: Using WireMock To Stub an API Response
-
-## Video Walkthrough: Using Wiremock to Record An API Request/Response
-
-## Video Walkthrough: Creating Templated API Mappings
