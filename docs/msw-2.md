@@ -7,5 +7,4 @@ This is one of the super-powers of MSW for me. If I'm working with a team of dev
 Although beyond the scope of this content, this workflow can also accomodate the style of development called "Consumer Driven Contract Testing". MSW can be used in my tests, and those tests can provide a set of contracts that *must* be provided by the server before the application is deployed.
 
 ## Video Walkthrough
-
 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/1045118100?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="mssw3"></iframe></div>

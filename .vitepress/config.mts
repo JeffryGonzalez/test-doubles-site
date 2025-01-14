@@ -5,7 +5,7 @@ export default defineConfig({
   title: "Test Doubles",
   description: "For Developer Confidence",
   head: [
-    [ 'script', { src: 'https://player.vimeo.com/api/player.js'}]
+    [ 'script', { src: 'https://player.vimeo.com/api/player.js', type: 'javascript'}]
   ],  
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
